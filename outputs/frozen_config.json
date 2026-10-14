@@ -1,0 +1,34 @@
+{
+  "experiment": "E06",
+  "model": "RF",
+  "feature_cols": [
+    "ret_1",
+    "ret_5",
+    "ret_10",
+    "ret_20",
+    "close_sma20",
+    "close_sma50",
+    "close_sma200",
+    "sma20_sma50",
+    "rsi_14",
+    "macd_hist",
+    "bb_pctb",
+    "bb_width",
+    "vol_20",
+    "atr_14_norm",
+    "vol_z20"
+  ],
+  "imbalance": "class_weight=balanced",
+  "pipeline_params": {
+    "clf__max_depth": null,
+    "clf__max_features": "sqrt",
+    "clf__min_samples_leaf": 68
+  },
+  "signal_rule": {
+    "margin": 0.05,
+    "min_hold": 5
+  },
+  "label": "\u00b11% close\u2192close, 5 trading days",
+  "val_macro_f1": 0.4036,
+  "frozen_before_test": true
+}

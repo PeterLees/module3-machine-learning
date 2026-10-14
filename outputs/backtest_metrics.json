@@ -1,0 +1,278 @@
+{
+  "assumptions": {
+    "fees_per_side": 0.001,
+    "slippage_per_side": 0.0005,
+    "fill": "next open",
+    "init_cash": 100000,
+    "rule": {
+      "margin": 0.05,
+      "min_hold": 5
+    }
+  },
+  "test": [
+    {
+      "strategy": "Model \u00b7 frozen rule (long-only)",
+      "total_return": 0.2371,
+      "cagr": 0.1127,
+      "ann_vol": 0.0977,
+      "sharpe": 1.142,
+      "max_drawdown": -0.0959,
+      "calmar": 1.176,
+      "n_orders": 30,
+      "n_trades": 15,
+      "exposure": 0.58,
+      "total_fees": 3236.94,
+      "final_value": 123713.66
+    },
+    {
+      "strategy": "Model \u00b7 raw argmax (long-only)",
+      "total_return": 0.2719,
+      "cagr": 0.1283,
+      "ann_vol": 0.0923,
+      "sharpe": 1.355,
+      "max_drawdown": -0.0775,
+      "calmar": 1.655,
+      "n_orders": 56,
+      "n_trades": 28,
+      "exposure": 0.55,
+      "total_fees": 6311.2,
+      "final_value": 127189.77
+    },
+    {
+      "strategy": "Model \u00b7 frozen rule (long/short)",
+      "total_return": -0.0906,
+      "cagr": -0.0466,
+      "ann_vol": 0.1326,
+      "sharpe": -0.293,
+      "max_drawdown": -0.2659,
+      "calmar": -0.175,
+      "n_orders": 31,
+      "n_trades": 31,
+      "exposure": 0.998,
+      "total_fees": 5441.73,
+      "final_value": 90935.24
+    },
+    {
+      "strategy": "B3 momentum rule (long-only)",
+      "total_return": 0.3767,
+      "cagr": 0.1741,
+      "ann_vol": 0.1232,
+      "sharpe": 1.365,
+      "max_drawdown": -0.1018,
+      "calmar": 1.71,
+      "n_orders": 5,
+      "n_trades": 3,
+      "exposure": 0.956,
+      "total_fees": 491.36,
+      "final_value": 137666.58
+    },
+    {
+      "strategy": "Buy & Hold SPY",
+      "total_return": 0.5655,
+      "cagr": 0.2523,
+      "ann_vol": 0.1283,
+      "sharpe": 1.818,
+      "max_drawdown": -0.0997,
+      "calmar": 2.53,
+      "n_orders": 1,
+      "n_trades": 1,
+      "exposure": 1.0,
+      "total_fees": 99.9,
+      "final_value": 156546.25
+    }
+  ],
+  "validation": [
+    {
+      "strategy": "Model \u00b7 frozen rule (long-only)",
+      "total_return": -0.0019,
+      "cagr": -0.001,
+      "ann_vol": 0.1589,
+      "sharpe": 0.073,
+      "max_drawdown": -0.1725,
+      "calmar": -0.006,
+      "n_orders": 26,
+      "n_trades": 13,
+      "exposure": 0.509,
+      "total_fees": 2727.72,
+      "final_value": 99808.95
+    },
+    {
+      "strategy": "Model \u00b7 raw argmax (long-only)",
+      "total_return": -0.039,
+      "cagr": -0.0197,
+      "ann_vol": 0.152,
+      "sharpe": -0.055,
+      "max_drawdown": -0.1742,
+      "calmar": -0.113,
+      "n_orders": 81,
+      "n_trades": 41,
+      "exposure": 0.489,
+      "total_fees": 8266.72,
+      "final_value": 96101.79
+    },
+    {
+      "strategy": "Model \u00b7 frozen rule (long/short)",
+      "total_return": -0.0898,
+      "cagr": -0.046,
+      "ann_vol": 0.1941,
+      "sharpe": -0.146,
+      "max_drawdown": -0.2053,
+      "calmar": -0.224,
+      "n_orders": 27,
+      "n_trades": 27,
+      "exposure": 0.998,
+      "total_fees": 4993.81,
+      "final_value": 91022.58
+    },
+    {
+      "strategy": "B3 momentum rule (long-only)",
+      "total_return": 0.0104,
+      "cagr": 0.0052,
+      "ann_vol": 0.1103,
+      "sharpe": 0.102,
+      "max_drawdown": -0.2306,
+      "calmar": 0.022,
+      "n_orders": 10,
+      "n_trades": 5,
+      "exposure": 0.598,
+      "total_fees": 1099.82,
+      "final_value": 101035.35
+    },
+    {
+      "strategy": "Buy & Hold SPY",
+      "total_return": 0.0477,
+      "cagr": 0.0236,
+      "ann_vol": 0.1949,
+      "sharpe": 0.217,
+      "max_drawdown": -0.245,
+      "calmar": 0.096,
+      "n_orders": 1,
+      "n_trades": 1,
+      "exposure": 1.0,
+      "total_fees": 99.9,
+      "final_value": 104773.32
+    }
+  ],
+  "fee_sensitivity": [
+    {
+      "fee_per_side": 0.0,
+      "strategy": "Model \u00b7 frozen rule (long-only)",
+      "total_return": 0.2748,
+      "sharpe": 1.304,
+      "n_trades": 15,
+      "total_fees": 0.0
+    },
+    {
+      "fee_per_side": 0.0,
+      "strategy": "Model \u00b7 raw argmax (long-only)",
+      "total_return": 0.3452,
+      "sharpe": 1.664,
+      "n_trades": 28,
+      "total_fees": 0.0
+    },
+    {
+      "fee_per_side": 0.0,
+      "strategy": "Buy & Hold SPY",
+      "total_return": 0.567,
+      "sharpe": 1.823,
+      "n_trades": 1,
+      "total_fees": 0.0
+    },
+    {
+      "fee_per_side": 0.0005,
+      "strategy": "Model \u00b7 frozen rule (long-only)",
+      "total_return": 0.2558,
+      "sharpe": 1.223,
+      "n_trades": 15,
+      "total_fees": 1630.99
+    },
+    {
+      "fee_per_side": 0.0005,
+      "strategy": "Model \u00b7 raw argmax (long-only)",
+      "total_return": 0.308,
+      "sharpe": 1.51,
+      "n_trades": 28,
+      "total_fees": 3201.78
+    },
+    {
+      "fee_per_side": 0.0005,
+      "strategy": "Buy & Hold SPY",
+      "total_return": 0.5662,
+      "sharpe": 1.82,
+      "n_trades": 1,
+      "total_fees": 49.98
+    },
+    {
+      "fee_per_side": 0.001,
+      "strategy": "Model \u00b7 frozen rule (long-only)",
+      "total_return": 0.2371,
+      "sharpe": 1.142,
+      "n_trades": 15,
+      "total_fees": 3236.94
+    },
+    {
+      "fee_per_side": 0.001,
+      "strategy": "Model \u00b7 raw argmax (long-only)",
+      "total_return": 0.2719,
+      "sharpe": 1.355,
+      "n_trades": 28,
+      "total_fees": 6311.2
+    },
+    {
+      "fee_per_side": 0.001,
+      "strategy": "Buy & Hold SPY",
+      "total_return": 0.5655,
+      "sharpe": 1.818,
+      "n_trades": 1,
+      "total_fees": 99.9
+    },
+    {
+      "fee_per_side": 0.002,
+      "strategy": "Model \u00b7 frozen rule (long-only)",
+      "total_return": 0.2006,
+      "sharpe": 0.981,
+      "n_trades": 15,
+      "total_fees": 6375.28
+    },
+    {
+      "fee_per_side": 0.002,
+      "strategy": "Model \u00b7 raw argmax (long-only)",
+      "total_return": 0.2026,
+      "sharpe": 1.044,
+      "n_trades": 28,
+      "total_fees": 12263.27
+    },
+    {
+      "fee_per_side": 0.002,
+      "strategy": "Buy & Hold SPY",
+      "total_return": 0.5639,
+      "sharpe": 1.814,
+      "n_trades": 1,
+      "total_fees": 199.6
+    },
+    {
+      "fee_per_side": "0 (no slippage)",
+      "strategy": "Model \u00b7 frozen rule (long-only)",
+      "total_return": 0.2941,
+      "sharpe": 1.384,
+      "n_trades": 15,
+      "total_fees": 0.0
+    },
+    {
+      "fee_per_side": "0 (no slippage)",
+      "strategy": "Model \u00b7 raw argmax (long-only)",
+      "total_return": 0.3834,
+      "sharpe": 1.818,
+      "n_trades": 28,
+      "total_fees": 0.0
+    },
+    {
+      "fee_per_side": "0 (no slippage)",
+      "strategy": "Buy & Hold SPY",
+      "total_return": 0.5678,
+      "sharpe": 1.825,
+      "n_trades": 1,
+      "total_fees": 0.0
+    }
+  ]
+}

@@ -1,0 +1,176 @@
+{
+  "holdout_period": [
+    "2025-01-02",
+    "2026-10-12"
+  ],
+  "snapshot": "spy_20261013.csv",
+  "candidates": [
+    {
+      "strategy": "S0 Buy & Hold",
+      "total_return": 0.3484,
+      "cagr": 0.1844,
+      "ann_vol": 0.1691,
+      "sharpe": 1.085,
+      "max_drawdown": -0.1876,
+      "calmar": 0.983,
+      "n_orders": 1,
+      "avg_exposure": 0.998,
+      "total_fees": 99.9,
+      "final_value": 134835.24,
+      "beats_BH_return": false
+    },
+    {
+      "strategy": "S1 Trend SMA200",
+      "total_return": 0.2281,
+      "cagr": 0.1234,
+      "ann_vol": 0.1142,
+      "sharpe": 1.076,
+      "max_drawdown": -0.1122,
+      "calmar": 1.1,
+      "n_orders": 7,
+      "avg_exposure": 0.876,
+      "total_fees": 688.64,
+      "final_value": 122810.85,
+      "beats_BH_return": false
+    },
+    {
+      "strategy": "S2 RF default-long",
+      "total_return": 0.3209,
+      "cagr": 0.1707,
+      "ann_vol": 0.1612,
+      "sharpe": 1.057,
+      "max_drawdown": -0.1658,
+      "calmar": 1.029,
+      "n_orders": 17,
+      "avg_exposure": 0.933,
+      "total_fees": 1769.25,
+      "final_value": 132086.33,
+      "beats_BH_return": false
+    },
+    {
+      "strategy": "S3 Drop-risk LR",
+      "total_return": 0.1459,
+      "cagr": 0.0802,
+      "ann_vol": 0.1326,
+      "sharpe": 0.648,
+      "max_drawdown": -0.1621,
+      "calmar": 0.495,
+      "n_orders": 23,
+      "avg_exposure": 0.926,
+      "total_fees": 2399.59,
+      "final_value": 114588.44,
+      "beats_BH_return": false
+    },
+    {
+      "strategy": "S4 Vol-target \u03c320",
+      "total_return": 0.2478,
+      "cagr": 0.1336,
+      "ann_vol": 0.1376,
+      "sharpe": 0.98,
+      "max_drawdown": -0.1567,
+      "calmar": 0.852,
+      "n_orders": 19,
+      "avg_exposure": 0.933,
+      "total_fees": 420.22,
+      "final_value": 124780.53,
+      "beats_BH_return": false
+    },
+    {
+      "strategy": "S5 Vol-target ML",
+      "total_return": 0.2446,
+      "cagr": 0.1319,
+      "ann_vol": 0.1334,
+      "sharpe": 0.996,
+      "max_drawdown": -0.1675,
+      "calmar": 0.788,
+      "n_orders": 22,
+      "avg_exposure": 0.949,
+      "total_fees": 453.14,
+      "final_value": 124461.13,
+      "beats_BH_return": false
+    },
+    {
+      "strategy": "S4L Vol-target \u03c320 \u00d71.5",
+      "total_return": 0.2514,
+      "cagr": 0.1354,
+      "ann_vol": 0.1623,
+      "sharpe": 0.864,
+      "max_drawdown": -0.1773,
+      "calmar": 0.764,
+      "n_orders": 85,
+      "avg_exposure": 1.158,
+      "total_fees": 1529.79,
+      "final_value": 125142.51,
+      "beats_BH_return": false
+    },
+    {
+      "strategy": "S5L Vol-target ML \u00d71.5",
+      "total_return": 0.2163,
+      "cagr": 0.1173,
+      "ann_vol": 0.155,
+      "sharpe": 0.793,
+      "max_drawdown": -0.1841,
+      "calmar": 0.637,
+      "n_orders": 154,
+      "avg_exposure": 1.177,
+      "total_fees": 2583.76,
+      "final_value": 121630.05,
+      "beats_BH_return": false
+    },
+    {
+      "strategy": "S6L Trend + Vol-target ML \u00d71.5",
+      "total_return": 0.2018,
+      "cagr": 0.1097,
+      "ann_vol": 0.1373,
+      "sharpe": 0.827,
+      "max_drawdown": -0.1245,
+      "calmar": 0.881,
+      "n_orders": 145,
+      "avg_exposure": 1.097,
+      "total_fees": 2869.42,
+      "final_value": 120183.81,
+      "beats_BH_return": false
+    }
+  ],
+  "reference_original_model": [
+    {
+      "strategy": "Original E06 model (frozen 2022)",
+      "total_return": 0.2404,
+      "cagr": 0.1298,
+      "ann_vol": 0.1364,
+      "sharpe": 0.961,
+      "max_drawdown": -0.129,
+      "calmar": 1.006,
+      "n_orders": 28,
+      "avg_exposure": 0.544,
+      "total_fees": 3096.22,
+      "final_value": 124045.0
+    }
+  ],
+  "borrow_sensitivity_posthoc": [
+    {
+      "strategy": "S4L Vol-target \u03c320 \u00d71.5",
+      "0.0": 0.2761,
+      "0.02": 0.2662,
+      "0.05": 0.2514
+    },
+    {
+      "strategy": "S5L Vol-target ML \u00d71.5",
+      "0.0": 0.241,
+      "0.02": 0.2311,
+      "0.05": 0.2163
+    },
+    {
+      "strategy": "S6L Trend + Vol-target ML \u00d71.5",
+      "0.0": 0.2263,
+      "0.02": 0.2164,
+      "0.05": 0.2018
+    },
+    {
+      "strategy": "S0 Buy & Hold (reference)",
+      "0.0": 0.3484,
+      "0.02": 0.3484,
+      "0.05": 0.3484
+    }
+  ]
+}
